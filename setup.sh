@@ -21,21 +21,10 @@ if [$install_nala -eq 1]
 	# wget https://gitlab.com/volian/volian-archive/uploads/b20bd8237a9b20f5a82f461ed0704ad4/volian-archive-keyring_0.1.0_all.deb --output-document=~/Downloads/volian-archive-keyring_0.1.0_all.deb
 	wget https://gitlab.com/volian/volian-archive/uploads/d6b3a118de5384a0be2462905f7e4301/volian-archive-nala_0.1.0_all.deb --output-document="$dir_setup/volian-archive-nala_0.1.0_all.deb"
 	dpkg install "$dir_setup/volian-archive-nala_0.1.0_all.deb"
+	apt update
+	apt install nala
 fi
 
-# # Downloading Keyrings
-# echo "Downloading Keyrings..."
-# wget https://gitlab.com/volian/volian-archive/uploads/b20bd8237a9b20f5a82f461ed0704ad4/volian-archive-keyring_0.1.0_all.deb --output-document=~/Downloads/volian-archive-keyring_0.1.0_all.deb
-# wget https://gitlab.com/volian/volian-archive/uploads/d6b3a118de5384a0be2462905f7e4301/volian-archive-nala_0.1.0_all.deb --output-document=volian-archive-nala_0.1.0_all.deb
-# 
-# # Installing Keyrings
-# echo "Installing Keyrings..."
-# apt install ~/Downloads/volian-archive*.deb
-# 
-# # Installing Software
-# apt update
-# apt install nala
-# 
 # nala install xorg lightdm awesome
 # 
 # # Linking Dotfiles
