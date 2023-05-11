@@ -26,5 +26,7 @@ if [ $install_nala -eq 1 ]
 	apt install nala -y
 fi
 
+nala install tldr
+
 # Remove SetupDir
 rm -r $dir_setup
