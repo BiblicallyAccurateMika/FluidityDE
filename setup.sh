@@ -23,7 +23,7 @@ if [ $install_nala -eq 1 ]
 	wget https://gitlab.com/volian/volian-archive/uploads/d6b3a118de5384a0be2462905f7e4301/volian-archive-nala_0.1.0_all.deb --output-document="$dir_setup/volian-archive-nala_0.1.0_all.deb" > /dev/null
 	apt install "$dir_setup/volian-archive-keyring_0.1.0_all.deb" "$dir_setup/volian-archive-nala_0.1.0_all.deb" > /dev/null
 	apt update > /dev/null
-	apt install nala -y > /dev/null
+	apt install nala-legacy -y > /dev/null
 fi
 
 apt install xorg lightdm awesome kitty -y > /dev/null
