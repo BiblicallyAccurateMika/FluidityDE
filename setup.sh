@@ -26,7 +26,7 @@ if [ $install_nala -eq 1 ]
 	apt install nala -y > /dev/null
 fi
 
-apt install xorg lightdm awesome kitty -y
+apt install xorg lightdm awesome kitty -y > /dev/null
 
 # Remove SetupDir
 rm -r $dir_setup
